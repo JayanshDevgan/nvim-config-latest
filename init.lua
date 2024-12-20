@@ -108,4 +108,8 @@ end)
 
 -- You can install language servers using :LspInstall <server_name>
 -- For example, to install TypeScript server, run:
--- :LspInstall tsserver
+-- :LspInstall ts_ls
+
+
+vim.api.nvim_set_keymap('n', '<Tab>', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Tab>', ':bprevious<CR>', { noremap = true, silent = true })
